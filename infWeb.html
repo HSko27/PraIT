@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark sticky-top bg-body-tertiary"
+      data-bs-theme="dark"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Stesjky</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#port">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#kontakt">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">O nás</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+
+    <div id="home" class="bg-light" style="width: 100%; height: 100vh">
+      <div class="flex-row d-flex text-center">
+        <img
+          class="img-fluid w-50 mt-5 ms-5"
+          src="https://portal.pohoda.cz/getattachment/ed4bcf1a-a597-42e3-9681-2ccb3dd9f777/.aspx"
+          alt=""
+          style="padding-top: 10vh"
+        />
+        <div class="ms-auto" style="margin-right: 40vh; padding-left: 30vh; margin-top: 25vh">
+          <h1 class="text-dark text-center">Vítejte</h1>
+          <h5 class="text-dark text-center">
+            Jsme rádi, že jste sem zavítali. Naše stránka vám nabídne širokou škálu informací, produktů a služeb, které
+            vám mohou pomoci dosáhnout vašich cílů a potřeb.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="port" style="width: 100%; height: 100vh" class="justify-content-center ps-5 d-flex bg-dark">
+      <div id="carouselExample" class="carousel slide justify-content-center d-flex w-75">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://img.freepik.com/free-photo/bussiness-people-working-team-office_1303-22863.jpg?w=900&t=st=1695105763~exp=1695106363~hmac=694c827618dfe62e7565e85b5262d63b567cdcf677bd28e3c61cd85e94440ef0"
+              class="d-block img-fluid"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/business-people-office-break_23-2148825901.jpg?w=900&t=st=1695105777~exp=1695106377~hmac=da37c35bcb3df56eee6ed0e64914af1335606cd5fa27a821cf7cdde58afbcf2b"
+              class="d-block img-fluid"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/workplace-violence-taking-place-colleagues_23-2149361849.jpg?w=900&t=st=1695105788~exp=1695106388~hmac=7faeb7fd1989c380fd9ee07d67218dd3a0ca07ea36daab36bc838e3440483c07"
+              class="d-block img-fluid"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Kontakt -->
+    <div style="width: 100%; height: 100vh" class="justify-content-center d-flex" id="kontakt">
+      <div class="row d-flex w-50" style="margin-top: 20vh; margin-bottom: 20vh">
+        <h1 class="text-center text-dark">Kontakt</h1>
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+          <div class="invalid-feedback">Valid first name is required.</div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" />
+          <div class="invalid-feedback">Valid last name is required.</div>
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+          <div class="invalid-feedback">Please enter a valid email address for shipping updates.</div>
+        </div>
+
+        <button class="btn btn-dark">Odeslat</button>
+      </div>
+    </div>
+
+    <!-- about -->
+
+    <div class="bg-dark" style="width: 100%; height: 100vh" id="about">
+      <h1 class="text-light text-center" style="padding-top: 15vh">O nás</h1>
+      <h4 class="mt-5 text-light text-center" style="padding-left: 30vh; padding-right: 30vh">
+        Historie firmy Stejsky sahá hluboko do minulosti, a to až do malého dřevařského dílny, kterou založil rodinný
+        patriarcha, Antonín Stejsky, v malé vesnici na přelomu 19. a 20. století. Antonín byl známý svou vášní pro
+        řemeslo a touhou vytvářet kvalitní dřevěné výrobky. Na začátku svého podnikání se firma Stejsky specializovala
+        na ruční výrobu nábytku a byla známá pro svou preciznost a lásku ke každému detailu. Antonín Stejsky věřil v
+        kvalitu nad kvantitu, a tuto filozofii předával svým potomkům. S postupem času se firma rozrostla a začala
+        vyrábět nábytek pro místní klientelu, což ji postupně etablovalo jako renomovaného výrobce nábytku v regionu.
+        Stejsky se brzy stala synonymem pro trvanlivost, eleganci a funkčnost. Během 20. století se firma Stejsky
+        adaptuje na moderní technologie a designové trendy, zůstávajíc však věrná svým kořenům v kvalitní dřevěné
+        řemeslné práci. Její výrobky se staly oblíbenými nejen v České republice, ale i v dalších evropských zemích.
+      </h4>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="py-3 bg-body-tertiary" data-bs-theme="dark">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#port" class="nav-link px-2 text-body-secondary">Portfolio</a></li>
+        <li class="nav-item"><a href="#kontakt" class="nav-link px-2 text-body-secondary">Kontakt</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">O nás</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 Stejsky, Inc</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
